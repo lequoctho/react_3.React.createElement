@@ -14,11 +14,22 @@
     <script src="/script.js" defer></script>
   </head>  
   <body>
-    <div id="app">Your app here</div>
+    <div id="app">
+      <ul>
+        <li>Go to market</li>
+        <li>Buy food</li>
+        <li>Make dinner</li>
+      </ul>
+    </div>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
+    <script>
+      const todos = [
+        'Go to market',
+        'Buy food',
+        'Make dinner'
+      ];
+      const ULList = React.createElement('ul', null);
+      const LIList = React.createElement('li', null, '');
+    </script>
   </body>
 </html>
